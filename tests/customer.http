@@ -1,0 +1,24 @@
+
+#Get list of customers
+POST http://localhost:3000/sp/customer/search
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IkRhbmlzaCBOYXllZW0iLCJsYW5ndWFnZSI6ImVuIiwiaXNfYWN0aXZlIjoxLCJpYXQiOjE2OTMxMzM0MjgsImV4cCI6MTY5MzIxOTgyOH0.5WVLPnsyfF-4EysidWiMGwHuHZdQ4AhvqAMb_hWnzyU
+Content-Type: application/json
+
+{
+    "data" : [
+        "", "all"
+    ]
+}
+
+###
+# Create customer
+POST http://localhost:3000/sp/customer/create
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IkRhbmlzaCBOYXllZW0iLCJsYW5ndWFnZSI6ImVuIiwiaXNfYWN0aXZlIjoxLCJpYXQiOjE2OTMxMzM0MjgsImV4cCI6MTY5MzIxOTgyOH0.5WVLPnsyfF-4EysidWiMGwHuHZdQ4AhvqAMb_hWnzyU
+Content-Type: application/json
+
+{
+    "data" : [
+        "Azhar Imam",
+        "person"
+    ]
+}

@@ -1,0 +1,12 @@
+
+#login authentication
+POST http://localhost:3000/authenticate
+Content-Type: application/json
+
+{
+    "data" : {
+        "email" : "idanish.ksa@gmail.com",
+        "password" : "12345"
+    }
+}
+
