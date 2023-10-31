@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Backend API for [Your Project Name]</title>
+</head>
+<body>
+
+<h1>Backend API for [Your Project Name]</h1>
+
+<p>This document contains information about the backend API of [Your Project Name]. The API is developed using Node.js, Express, and MySQL, and it offers various endpoints for handling authentication, executing stored procedures, and managing file attachments.</p>
+
+<h2>Table of Contents</h2>
+<ul>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#getting-started">Getting Started</a></li>
+    <li><a href="#api-endpoints">API Endpoints</a></li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#license">License</a></li>
+</ul>
+
+<h2>Features</h2>
+<ul>
+    <li>User authentication</li>
+    <li>Execution of stored procedures for database interactions</li>
+    <li>Handling of file attachments</li>
+    <li>CORS support for cross-origin requests</li>
+</ul>
+
+<h2>Getting Started</h2>
+<p>To set up and run the backend API on your local machine, follow these steps:</p>
+<ol>
+    <li>Clone the repository to your local machine:</li>
+    <pre>git clone &lt;repository-url&gt;</pre>
+
+    <li>Install the required dependencies:</li>
+    <pre>npm install</pre>
+
+    <li>Set up your environment variables by creating a <code>.env</code> file in the project root directory and defining the following variables:</li>
+    <pre>
+        DB_HOST=&lt;YourDatabaseHost&gt;
+        DB_USER=&lt;YourDatabaseUser&gt;
+        DB_PASSWORD=&lt;YourDatabasePassword&gt;
+        DB_PORT=&lt;YourDatabasePort&gt;
+        DB_DEFAULT=&lt;YourDatabaseName&gt;
+        TOKEN_SECRET=&lt;YourTokenSecret&gt;
+        UPLOAD_FOLDER=&lt;YourUploadFolder&gt;
+        APP_PORT=&lt;PortNumber&gt;
+    </pre>
+
+    <li>Run the application:</li>
+    <pre>npm start</pre>
+</ol>
+<p>Your backend API should now be running and accessible at http://localhost:&lt;APP_PORT&gt;.</p>
+
+<h2>API Endpoints</h2>
+<ul>
+    <li>/sp/:object/:action: Execute stored procedures based on the specified <code>object</code> and <code>action</code>.</li>
+    <li>/authenticate: Authenticate users with email and password.</li>
+    <li>/attachment/save: Save file attachments.</li>
+    <li>/attachment/view/:token: View file attachments based on a token.</li>
+    <li>/restart: Restart the application (for development purposes).</li>
+</ul>
+
+<h2>Usage</h2>
+<p>This backend API is designed to work in conjunction with the frontend or client application. Make sure you configure and integrate the API endpoints into your client application for full functionality.</p>
+
+<h2>License</h2>
+<p>This project is licensed under the <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License (CC BY-NC-ND 4.0)</a>.</p>
+<p>Please review the license to understand the terms and conditions of use.</p>
+
+</body>
+</html>
